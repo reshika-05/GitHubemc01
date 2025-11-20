@@ -1,1 +1,19 @@
-create text01.txt file
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("number finding");
+        double d=Math.random()*100;
+        //(int)d;
+        while((int)d>0){
+            Scanner obj=new Scanner(System.in);
+            int n=obj.nextInt();
+            if(n==(int)d) {
+                System.out.println("equal");break;}
+            else if(n<(int)d) {
+                System.out.println("low");
+            }
+            else System.out.println("high");
+        }
+    }
+}
